@@ -1,0 +1,110 @@
+:root {
+    --blue: rgb(184, 204, 228);
+    --yellow: rgb(250, 250, 152);
+}
+body {
+    width: 1024px;
+    margin: 15px auto;
+}
+th, td, p, input {
+    font:14px Verdana;
+}
+table table {
+    margin: 0 !important;
+}
+table, th, td 
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+}
+/* Cabeçalho */
+header #Brasao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header #Brasao img {
+    max-width: 100px;
+}
+header #Brasao p {
+    text-align: center;
+    margin-left: 50px;
+}
+header #Modensino {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+/* Informaçoes */
+table#Info {
+    width: 100%;
+    margin-top: 25px;
+}
+table#Info td {
+    text-align: left;
+}
+table#Info tr > td {
+    max-width: 100px;
+}
+
+/* Table */
+table:not(#Info) {
+    margin: 25px 0;
+    width: 100%;
+}
+table:not(#Info) td {
+    height: 50px;
+    width: 100px;
+}
+
+/* Footer */
+footer {
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer div p{
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+footer div p + p {
+    font-size: 10px;
+}
+
+.blue {
+    background-color: var(--blue);
+}
+.yellow {
+    background-color: var(--yellow);
+}
+
+/* Impressão */
+
+@page {
+size: A4;
+margin: 11mm 17mm 17mm 17mm;
+}
+
+@media print {
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.content-block > tbody > tr, p {
+    page-break-inside: avoid;
+}
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="jquery.splitter-0.14.0.js"></script>
+    <script src="viewer.js"></script>
+    <script>
+        data = [
+            {
+                "modensino":"Fundamental I",
+                "cardapios":[
+                    {
+                        "sub":"Dejejum",
+                        "segunda":10,
+                        "terça": 15,
+                        "quarta": 12,
+                        "quinta": 56,
+                        "sexta": 13
+                    },
+                    {
+                        "sub":"Refeição da Manhã",
+                        "segunda":10,
+                        "terça": 15,
+                        "quarta": 12,
+                        "quinta": 56,
+                        "sexta": 13
+                    },
+                    {
+                        "sub":"Sobremesa Refeição Manhã",
+                        "segunda":10,
+                        "terça": 15,
+                        "quarta": 12,
+                        "quinta": 56,
+                        "sexta": 13
+                    }
+                ]
+            },
+            {
+                "modensino":"Fundamental II",
+                "cardapios":[
+                    {
+                        "sub":"Dejejum",
+                        "segunda":10,
+                        "terça": 15,
+                        "quarta": 12,
+                        "quinta": 56,
+                        "sexta": 13
+                    },
+                    {
+                        "sub":"Refeição da Manhã",
+                        "segunda":10,
+                        "terça": 15,
+                        "quarta": 12,
+                        "quinta": 56,
+                        "sexta": 13
+                    },
+                    {
+                        "sub":"Sobremesa Refeição Manhã",
+                        "segunda":10,
+                        "terça": 15,
+                        "quarta": 12,
+                        "quinta": 56,
+                        "sexta": 13
+                    }
+                ]
+            }
+        ];
+        document.body.appendChild(buildTable(data))
+    </script>
+</body>
+</html>
